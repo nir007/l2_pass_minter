@@ -1,0 +1,22 @@
+{
+  "arbitrum": {
+    "rpc_url": "https://arbitrum.llamarpc.com",
+    "explorer_url": "https://arbiscan.io/"
+  },
+  "scroll": {
+    "rpc_url": "https://scroll-mainnet.public.blastapi.io",
+    "explorer_url": "https://scrollscan.com/"
+  },
+  "avalanche": {
+    "rpc_url": "https://1rpc.io/avax/c",
+    "explorer_url": "https://snowscan.xyz/"
+  },
+  "optimism": {
+    "rpc_url": "https://optimism.gateway.tenderly.co",
+    "explorer_url": "https://optimistic.etherscan.io/"
+  },
+  "linea": {
+    "rpc_url": "https://1rpc.io/linea",
+    "explorer_url": "https://lineascan.build/"
+  }
+}
