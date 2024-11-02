@@ -96,12 +96,12 @@ class Client:
                 receipts = await self.w3.eth.get_transaction_receipt(HexStr(tx_hash))
                 status = receipts.get("status")
                 if status == 1:
-                    print(f"Transaction was successful: {self.chain.get("explorer_url")}tx/0x{tx_hash}")
+                    print(f"Transaction was successful: {self.chain.get('explorer_url')}tx/0x{tx_hash}")
                     return True
                 elif status is None:
                     await asyncio.sleep(poll_latency)
                 else:
-                    print(f"Transaction failed: {self.chain.get("explorer_url")}tx/0x{tx_hash}")
+                    print(f"Transaction failed: {self.chain.get('explorer_url')}tx/0x{tx_hash}")
                     return False
             except TransactionNotFound:
                 if total_time > timeout:
